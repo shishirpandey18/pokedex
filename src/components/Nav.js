@@ -8,14 +8,14 @@ const Nav = ({pokemons, setPokemons,setUrlMain,setFilterPokemons }) => {
   const [habitat, setHabitat] = useState([]);
   const [state, setState] = useState(true);
   const handleSearch = async (e) => {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=200&`);
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon-species/?limit=200&`);
     const data = await res.json();
   
     const filteredPokemon = data.results.filter((pokemon) => {
       return pokemon.name.includes(e.target.value);
     });
     // setState(false);
-    setFilterPokemons(filteredPokemon);
+    setPokemons(filteredPokemon);
   };
   async function handleRegion() {
     const res = await fetch("https://pokeapi.co/api/v2/region/");
