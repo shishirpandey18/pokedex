@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth 0.50s;
+  list-style: none;
+  text-decoration: none;
+}

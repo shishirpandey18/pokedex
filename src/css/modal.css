@@ -1,0 +1,21 @@
+#modal-body{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 70vh;
+    background-color: gray;
+    opacity: 0.9;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    border: 1px solid red;
+    
+}
+.modal-left{
+    width: 30vw !important;
+    padding-left: 2rem;
+    
+}
