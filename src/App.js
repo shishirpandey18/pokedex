@@ -1,6 +1,5 @@
 import React from 'react'
 import MyRoute from './MyRoute'
-import { AppProvider } from './context'
 import { createContext } from 'react';
 
 const initialState = {
@@ -34,10 +33,7 @@ const App = () => {
   return (
     <>
     <colorContext.Provider value={initialState}>
-    
-    <AppProvider>
     <MyRoute/>
-    </AppProvider>
     
     </colorContext.Provider>
     </>
